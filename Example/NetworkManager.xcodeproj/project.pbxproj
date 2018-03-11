@@ -12,7 +12,13 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* DataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* DataRequestTests.swift */; };
+		821AD25520546CE1001F0462 /* GetPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD25220546CC1001F0462 /* GetPostsRequest.swift */; };
+		821AD259205471DD001F0462 /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD258205471DD001F0462 /* GetPostRequest.swift */; };
+		821AD25C20547230001F0462 /* PostPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD25B20547230001F0462 /* PostPostRequest.swift */; };
+		821AD25E20547283001F0462 /* DeletePostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD25D20547283001F0462 /* DeletePostRequest.swift */; };
+		821AD260205472ED001F0462 /* PutPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD25F205472ED001F0462 /* PutPostRequest.swift */; };
+		821AD26220547360001F0462 /* PatchPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AD26120547360001F0462 /* PatchPostRequest.swift */; };
 		AA5F1F1117BA475C3DCF2162 /* Pods_NetworkManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4905CE725896F3AB955BFFA0 /* Pods_NetworkManager_Tests.framework */; };
 		F6E54060D6737FE6C8C5F0A0 /* Pods_NetworkManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA95DB9FECE964D97A93373 /* Pods_NetworkManager_Example.framework */; };
 /* End PBXBuildFile section */
@@ -30,7 +36,7 @@
 /* Begin PBXFileReference section */
 		20D84CD79F1057AAC0BED128 /* Pods-NetworkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager_Example/Pods-NetworkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2B9762E7F59978178603DD00 /* Pods-NetworkManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager_Tests/Pods-NetworkManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4631CFA245E967AB9337492D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4631CFA245E967AB9337492D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4905CE725896F3AB955BFFA0 /* Pods_NetworkManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NetworkManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +47,17 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* NetworkManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* DataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestTests.swift; sourceTree = "<group>"; };
+		821AD25220546CC1001F0462 /* GetPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsRequest.swift; sourceTree = "<group>"; };
+		821AD258205471DD001F0462 /* GetPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostRequest.swift; sourceTree = "<group>"; };
+		821AD25B20547230001F0462 /* PostPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPostRequest.swift; sourceTree = "<group>"; };
+		821AD25D20547283001F0462 /* DeletePostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePostRequest.swift; sourceTree = "<group>"; };
+		821AD25F205472ED001F0462 /* PutPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutPostRequest.swift; sourceTree = "<group>"; };
+		821AD26120547360001F0462 /* PatchPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchPostRequest.swift; sourceTree = "<group>"; };
 		8AA95DB9FECE964D97A93373 /* Pods_NetworkManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C029561F4F4006A0C3817E3B /* Pods-NetworkManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager_Tests/Pods-NetworkManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CF6F033D686AD673E01330CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D57176C96FB5864FBCEC03B7 /* NetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NetworkManager.podspec; path = ../NetworkManager.podspec; sourceTree = "<group>"; };
+		CF6F033D686AD673E01330CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D57176C96FB5864FBCEC03B7 /* NetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NetworkManager.podspec; path = ../NetworkManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EE21EB62C543F7B5CB12DDCB /* Pods-NetworkManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager_Example/Pods-NetworkManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +127,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				821AD25420546CC8001F0462 /* Requests */,
+				607FACEB1AFB9204008FA782 /* DataRequestTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -146,6 +159,27 @@
 				4905CE725896F3AB955BFFA0 /* Pods_NetworkManager_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		821AD25420546CC8001F0462 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				821AD2632054740C001F0462 /* Data */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		821AD2632054740C001F0462 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				821AD25220546CC1001F0462 /* GetPostsRequest.swift */,
+				821AD258205471DD001F0462 /* GetPostRequest.swift */,
+				821AD25B20547230001F0462 /* PostPostRequest.swift */,
+				821AD25D20547283001F0462 /* DeletePostRequest.swift */,
+				821AD25F205472ED001F0462 /* PutPostRequest.swift */,
+				821AD26120547360001F0462 /* PatchPostRequest.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		A4F25961D1C05BFB7C1D7D47 /* Pods */ = {
@@ -335,10 +369,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkManager_Example/Pods-NetworkManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NetworkManager/NetworkManager.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NetworkManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,7 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				821AD25520546CE1001F0462 /* GetPostsRequest.swift in Sources */,
+				821AD25C20547230001F0462 /* PostPostRequest.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* DataRequestTests.swift in Sources */,
+				821AD26220547360001F0462 /* PatchPostRequest.swift in Sources */,
+				821AD260205472ED001F0462 /* PutPostRequest.swift in Sources */,
+				821AD25E20547283001F0462 /* DeletePostRequest.swift in Sources */,
+				821AD259205471DD001F0462 /* GetPostRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -504,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -518,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetworkManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -533,6 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetworkManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -555,11 +601,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManager_Example.app/NetworkManager_Example";
 			};
 			name = Debug;
 		};
@@ -572,11 +620,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManager_Example.app/NetworkManager_Example";
 			};
 			name = Release;
 		};
