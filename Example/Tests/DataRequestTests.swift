@@ -93,15 +93,16 @@ class DataRequestTests: XCTestCase {
     
     func testPutPosts() {
         let putExpectation = expectation(description: "Creating basic put request")
-        
+
         networkManager
             .response(for: PostPostRequest())
-            .debug()
-            .filter { $0.isStatusSuccess }
-            .map { try! $0.map(to: Post.self) }
+            .debug()            
+            .map { try $0.map(to: Post.self) }
+            .catchErrorJustReturn(Post(id: 0, title: "", author: ""))
             .map { Post(id: $0.id, title: "new Title", author: "new author") }
             .flatMap { self.networkManager.response(for: PutPostRequest(post: $0)) }
-            .map { try! $0.map(to: Post.self) }
+            .map { try $0.map(to: Post.self) }
+            .catchErrorJustReturn(Post(id: 0, title: "", author: ""))
             .subscribe(onNext: { post in
                 XCTAssertEqual("new author", post.author)
                 XCTAssertEqual("new Title", post.title)

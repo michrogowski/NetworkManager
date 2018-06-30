@@ -59,9 +59,9 @@ open class DataRequest: NetworkRequest {
     }
         
     @discardableResult
-    public func response(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse) -> Void) -> Self {
+    public func response(queue: DispatchQueue = .main, completionHandler: @escaping (DataResponse) -> Void) -> Self {
         dataCoordinator?.queue.addOperation {
-            (queue ?? DispatchQueue.main).async {
+            queue.async {
                 let data = self.dataCoordinator?.responseData
                 let error = self.dataCoordinator?.error
                 
